@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nen"
+    tools:context="com.example.kma.DanhSachLopActivity">
+    <include
+        layout="@layout/custom_toolbardahsachlop"
+        android:id="@+id/toolbar"/>
+
+    <EditText
+        android:layout_below="@id/toolbar"
+        android:id="@+id/edtserchLop"
+        android:background="#FFFFFF"
+        android:padding="15dp"
+
+        android:textColorHint="#3F51B5"
+        android:layout_marginBottom="10dp"
+        android:hint="Tìm kiếm ( tên lớp học)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ListView
+        android:id="@+id/listviewLop"
+        android:layout_marginBottom="57dp"
+        tools:listitem="@layout/dong_lop"
+        android:layout_below="@id/edtserchLop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            tools:context="com.example.kma.MainActivity">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fbThemLop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginLeft="160dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_add"
+                app:backgroundTint="#DA00FF"
+                app:fabSize="normal" />
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvAnHien"
+        android:text="Không có lớp trong danh sách"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

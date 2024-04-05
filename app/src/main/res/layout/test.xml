@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kma.ManagerActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<GridLayout
+    android:id="@+id/girdviewManager"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:columnCount="3">
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle2"
+        android:drawableTop="@drawable/manager"
+        android:paddingTop="20dp"
+        android:shadowColor="#0022A8"
+        android:shadowDx="-1"
+        android:shadowDy="-5"
+        android:shadowRadius="15"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:text="QL Lớp học"
+        android:textColor="#fff" />
+
+    <Button
+        android:shadowColor="#0022A8"
+        android:shadowDx="-1"
+        android:shadowDy="-5"
+        android:shadowRadius="15"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle2"
+        android:drawableTop="@drawable/student"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:textSize="12dp"
+        android:layout_margin="10dp"
+        android:text="QL Sinh Viên"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle2"
+        android:drawableTop="@android:drawable/ic_dialog_info"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:shadowColor="#0022A8"
+        android:shadowDx="-1"
+        android:shadowDy="-5"
+        android:shadowRadius="15"
+        android:paddingTop="20dp"
+        android:text="Info"
+        android:textColor="#fff" />
+
+    <Button
+        android:shadowColor="#0022A8"
+        android:shadowDx="-1"
+        android:shadowDy="-5"
+        android:shadowRadius="15"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circlealert"
+        android:textStyle="bold"
+        android:drawableTop="@android:drawable/ic_dialog_alert"
+        android:paddingTop="20dp"
+        android:layout_margin="10dp"
+        android:text="Logout"
+        android:textColor="#fff" />
+</GridLayout>
+    </LinearLayout>
+</LinearLayout>

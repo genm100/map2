@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@tools:sample/first_names">
+
+
+        <item
+            android:title="Đăng ký tài khoản mới"
+            android:id="@+id/btndangky"
+            android:icon="@drawable/ic_action_setting"
+            />
+            <item
+                android:title="Đổi mật khẩu"
+                android:id="@+id/menuDoimatkhau"
+                android:icon="@drawable/ic_action_setting"
+                />
+            <item
+                android:id="@+id/menuDangXuat"
+                android:title="Đăng xuất"
+                android:icon="@drawable/ic_action_logout"
+                />
+
+</menu>

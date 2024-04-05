@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kma.introActivity.IntroOneActivity">
+
+
+    <ImageView
+        android:id="@+id/bgapp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/nen" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="402dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-74dp"
+        android:layout_marginBottom="-150dp"
+        android:gravity="start"
+        android:shadowColor="#0022A8"
+        android:text="          WELCOME !!"
+        android:textAlignment="textStart"
+        android:textColor="#F44336"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="169dp"
+        android:layout_height="97dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="380dp"
+        android:outlineAmbientShadowColor="#C33030"
+        android:src="@drawable/hocsinh" />
+
+    <ImageView
+        android:id="@+id/imgOngVnag"
+        android:layout_width="258dp"
+        android:layout_height="283dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="500dp"
+        android:src="@drawable/ctuet" />
+</RelativeLayout>

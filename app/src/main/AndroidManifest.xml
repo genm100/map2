@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kma">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ctuet"
+        android:label="CTUET"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.kma.InFoAppActivity"></activity>
+        <activity android:name="com.example.kma.loginandregisteractivity.LoginActivity" />
+        <activity android:name="com.example.kma.loginandregisteractivity.ChangePasswordActivity" />
+        <activity android:name="com.example.kma.loginandregisteractivity.RegisterActivity" />
+        <activity android:name="com.example.kma.introActivity.IntroOneActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.kma.ThemLopActivity" />
+        <activity android:name="com.example.kma.DanhSachLopActivity" />
+        <activity android:name="com.example.kma.ManagerActivity" />
+        <activity android:name="com.example.kma.ThemSinhVienActivity" />
+        <activity android:name="com.example.kma.MainActivity" />
+        <activity android:name="com.example.kma.Calendar"/>
+        <activity android:name="com.example.kma.QRScannerActivity"/>
+        <activity android:name="com.example.kma.qrresult"/>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

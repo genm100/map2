@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen"
+    tools:context="com.example.kma.MainActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar_danhsachsinhvien"/>
+
+    <EditText
+        android:layout_below="@id/toolbar"
+        android:id="@+id/edtsearch"
+        android:layout_marginBottom="15dp"
+        android:background="#FFFFFF"
+        android:padding="15dp"
+        android:textColorHint="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm kiếm (tên sinh viên)" />
+
+
+    <Button
+        android:id="@+id/btnxem"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xem danh sách điểm danh" />
+
+    <ListView
+        android:id="@+id/listSV"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edtsearch"
+        tools:listitem="@layout/dong_sinhvien" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.kma.MainActivity">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fbsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginLeft="160dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/add64"
+                app:backgroundTint="#6FFC01"
+                app:fabSize="mini"
+                tools:ignore="DuplicateIds" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fbadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginLeft="160dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_add"
+                app:backgroundTint="#673AB7"
+                app:fabSize="normal" />
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
